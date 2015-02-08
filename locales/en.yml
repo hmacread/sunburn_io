@@ -1,0 +1,49 @@
+en:
+  intro:
+    heading: We believe that complexity can be tamed by design.
+    body: |
+      By giving engineers the tools to build _scalable_, _testable_
+      and _repeatable_ networks, we enable the next wave of
+      innovation.
+
+      Create. Run. Test. Learn. Iterate. The new normal in networking.
+
+  about:
+    heading: Okay, sounds interesting. Tell me more!
+    body: |
+      Sunburn is a revolutionary set of tools aimed at breaking
+      down existing barriers and enabling network engineers to
+      rapidly prototype and deploy Software Defined Networks.
+
+      Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
+
+      Stay tuned, we'll be releasing more information about our
+      alpha in the coming months.
+
+  subscribe:
+    heading: Stay in touch & Get Early Access
+    body: |
+      If you'd like to stay in the loop, and get access to the
+      Sunburn alpha as soon as it arrives, subscribe to our
+      mailing list.
+
+    form:
+      labels:
+        email: Email address
+        submit: Subscribe
+
+  team:
+    heading: The team
+    members:
+      hugh_macready:
+        name: Hugh Macready
+        twitter: hmacread
+        bio: UNHCR Alum, real-life Cisco kid, seafarer.
+
+      nicholas_bruning:
+        name: Nicholas Bruning
+        twitter: thetron
+        bio: Rubiest, internet Rambo, cheesemaker
+
+  footer:
+    copyright: &copy; 2015, Sunburn
