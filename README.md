@@ -8,10 +8,16 @@
 
 ## Getting started
 
-Make sure you're running Ruby 2.1.2, and install the bundle
+Make sure you're running Ruby 2.1.2, and install the bundle with:
 
 ```sh
 $ bundle install
 ```
 
-Then start the server with `$ bundle exec middleman server`
+Once you've done that, you can start the server with:
+
+```sh
+$ bundle exec middleman server
+```
+
+The site will be served up on `http://localhost:4567`.
