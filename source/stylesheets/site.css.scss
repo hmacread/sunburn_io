@@ -1,0 +1,114 @@
+@charset "utf-8";
+@import "normalize";
+@import "bourbon";
+@import "neat";
+
+$brand-color: #F37052;
+$dark-color: #333;
+$lighter-color: #FFF;
+
+body{
+  font-family: $helvetica;
+  font-weight: 100;
+}
+
+p{
+  font-size: 24px;
+
+  em{
+    font-style: normal;
+    font-weight: 200;
+  }
+}
+
+h2{
+  font-size: 48px;
+  font-weight: 100;
+  color: $brand-color;
+}
+
+header{
+  background: $brand-color;
+  padding: 60px 0;
+  .container{
+    text-align: center;
+  }
+
+  .logo{
+    max-width: 400px;
+  }
+
+  h1{
+    font-size: 48px;
+    font-weight: 100;
+    color: #FFF;
+  }
+
+  a{
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    background: #FFF;
+    color: $brand-color;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 3px;
+  }
+}
+
+header + .main{
+  margin-top: 100px;
+}
+
+.container{
+  @include outer-container;
+}
+
+#subscribe{
+  $pad: 30px;
+  padding: $pad $pad*2;
+  background: $dark-color;
+  margin-left: -$pad*2;
+  margin-right: -$pad*2;
+  border-radius: 5px;
+
+  h2, p{
+    color: $lighter-color;
+  }
+}
+
+.team-members{
+  .member{
+    @include span-columns(3);
+    @include shift(1);
+
+    text-align: center;
+
+    &:first-of-type{
+      @include shift(2);
+    }
+  }
+
+  img{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    border: 1px solid $dark-color;
+  }
+
+  h3{
+    font-weight: 100;
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+
+  a{
+    font-size: 18px;
+    color: $brand-color;
+    text-decoration: none;
+  }
+
+  p{
+
+  }
+}

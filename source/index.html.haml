@@ -1,0 +1,24 @@
+%section#intro
+  =tmd "intro.body"
+
+%section#about
+  %h2=t 'about.heading'
+  =tmd 'about.body'
+
+%section#subscribe
+  %h2=t 'subscribe.heading'
+  =tmd "subscribe.body"
+
+  %form#subscribe{:action => "#", :method => "post"}
+    %input{:name => "email", :placeholder => t("subscribe.form.labels.email"), :type => "text", :value => ""}/
+    %input{:name => "subscribe", :type => "submit", :value => t("subscribe.form.labels.submit")}/
+
+%section#team
+  %h2=t 'team.heading'
+  .team-members
+    - [:hugh_macready, :nicholas_bruning].each do |m|
+      .member{:class => "member-#{m.to_s.dasherize}"}
+        %img{:alt => t("team.members.#{m}.name"), :src => "/images/avatar-#{m.to_s.split("_").first}.jpg"}/
+        %h3=t "team.members.#{m}.name"
+        %a{:href => "https://twitter.com/#{t("team.members.#{m}.twitter")}"}= "@#{t("team.members.#{m}.twitter")}"
+        %p=t "team.members.#{m}.bio"

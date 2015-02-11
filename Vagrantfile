@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
-  config.vm.network "forwarded_port", guest: 4758, host: 4758
+  config.vm.network "forwarded_port", guest: 4567, host: 4567
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -71,7 +71,7 @@ Vagrant.configure(2) do |config|
     echo 'eval "$(rbenv init -)"' >> ~/.bashrc
     git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
     rbenv install 2.1.2
-    sudo gem install middleman
+    gem install bundler
     bundle install
     bundle exec middleman server
   SHELL
