@@ -5,18 +5,17 @@
 * Ruby 2.1.2
 * Middleman 3.x
 
+## Simulating locally.
 
-## Getting started
+Pre-requisites:
 
-Make sure you're running Ruby 2.1.2, and install the bundle with:
-
-```sh
-$ bundle install
-```
-
-Once you've done that, you can start the server with:
+* Vagrant.
+* Virtualbox.
 
 ```sh
+$ vagrant up
+$ vagrant ssh
+$ cd /vagrant
 $ bundle exec middleman server
 ```
 
